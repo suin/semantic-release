@@ -4,6 +4,9 @@ import type { PluginConfig as YarnOptions } from "@suin/semantic-release-yarn";
 
 const changelogFile = "CHANGELOG.md";
 
+const releaseEmoji =
+  types.find(({ type }) => type === "release")?.emoji ?? "🚀";
+
 const defineConfig = ({
   types: userDefinedTypes,
   defaultBranch = "main",
@@ -61,8 +64,7 @@ const defineConfig = ({
       "@semantic-release/github",
       {
         releasedLabels: ["released", "${nextRelease.gitTag}"],
-        successComment:
-          "🎉 This ${issue.pull_request ? 'pull request' : 'issue'} is included in version ${nextRelease.gitTag}.",
+        successComment: `${releaseEmoji} This $\{issue.pull_request ? 'pull request' : 'issue'} is included in version $\{nextRelease.gitTag}.`,
       },
     ],
   ];
@@ -114,8 +116,9 @@ const defineConfig = ({
           "package-lock.json", // to commit the "version" property change
           changelogFile,
         ],
-        message:
-          "release: 🏹 ${nextRelease.gitTag} [skip ci]\n\n${nextRelease.notes}",
+        message: `release: ${releaseEmoji} $\{nextRelease.gitTag} [skip ci]
+
+$\{nextRelease.notes}`,
       },
     ]
   );
