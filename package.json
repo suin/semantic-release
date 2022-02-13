@@ -53,7 +53,7 @@
     "lint:commitlint": "commitlint",
     "commitlint": "run-s build 'lint:commitlint {@}' --",
     "test": "echo nothing to do",
-    "release": "echo nothing to do"
+    "release": "semantic-release"
   },
   "dependencies": {
     "@commitlint/types": "^16.0.0",
