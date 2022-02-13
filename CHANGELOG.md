@@ -1,3 +1,10 @@
+### [1.0.1](https://github.com/suin/semantic-release/compare/v1.0.0...v1.0.1) (2022-02-13)
+
+
+### Bug Fixes
+
+* 🐛 release emoji in types is not used in release commits ([52eeca0](https://github.com/suin/semantic-release/commit/52eeca0738abb35675e8647b6aaf44386bcf70d0))
+
 ## 1.0.0 (2022-02-13)
 
 
