@@ -768,7 +768,7 @@ __metadata:
     "@semantic-release/git": ^10.0.1
     "@suin/semantic-release-yarn": ^1.1.0
     "@suin/tsconfig": ^0.0.0
-    "@types/node": ^17.0.16
+    "@types/node": ^18.11.12
     "@types/semantic-release": ^17.2.3
     conventional-changelog-conventionalcommits: ^4.6.3
     cosmiconfig: ^7.0.1
@@ -847,10 +847,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^17.0.16":
+"@types/node@npm:*":
   version: 17.0.17
   resolution: "@types/node@npm:17.0.17"
   checksum: 8ddba2829acdf1684fbd8fd248ec13f033efb70ecd1085677b547c40ef8e936a006b95eac3bdc28c47939c62526f3f027afeb4a930e30e4394923bbae4626476
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.11.12":
+  version: 18.11.12
+  resolution: "@types/node@npm:18.11.12"
+  checksum: 6c67f0998a9ad8ef0f357fcc0d72841c579576c746cfbac67c9d0229e1cd219d3b96297c2caaeaa4084ba7e9ad112b412e64af4066e522faa0be4ef9ad0a613a
   languageName: node
   linkType: hard
 
