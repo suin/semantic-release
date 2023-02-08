@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "@commitlint/types": "^16.0.0",
-    "@types/node": "^17.0.16",
+    "@types/node": "^18.13.0",
     "@types/semantic-release": "^17.2.3",
     "cosmiconfig": "^7.0.1"
   },
